@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center">
+        <TextView
+            android:textSize="20dp"
+            android:text="欢迎"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:textSize="20dp"
+            android:text=""
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/myuname"
+            />
+        <TextView
+            android:textSize="20dp"
+            android:text=""
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/myupass"
+            />
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0"
+        >
+        <TableRow>
+            <TextView
+                android:text="性别"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ></TextView>
+            </TableRow>
+        <TableRow>
+            <RadioGroup
+                android:id="@+id/sex"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="boy"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="girl"
+                    />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="爱好"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                ></TextView>
+        </TableRow>
+        <TableRow>
+            <LinearLayout android:layout_width="match_parent" android:orientation="horizontal" android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="踢球"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编程"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吃饭"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="睡觉"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <RatingBar
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="5"></RatingBar>
+        </TableRow>
+        <TableRow>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                ></Spinner>
+        </TableRow>
+        <TableRow>
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></SeekBar>
+        </TableRow>
+       <TableRow>
+           <ProgressBar
+               style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               ></ProgressBar>
+        </TableRow>
+       <TableRow>
+
+           <TimePicker
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"></TimePicker>
+        </TableRow>
+       <TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+
+</LinearLayout>
